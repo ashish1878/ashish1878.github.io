@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Personal Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/home/niit/prog1/style.css">
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  background: #E5E4E2;
+}
+.tabinator {
+  background: #fff;
+  padding: 40px;
+  font-family: Open Sans;
+}
+.tabinator h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tabinator input {
+  display: none;
+}
+.tabinator label {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 25px;
+  color: #ccc;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+.tabinator label:before {
+  content:'';
+  display:block;
+  width:100%;
+  height:15px;
+  background-color:#fff;
+  position:absolute;
+  bottom:-11px;
+  left:0;
+  z-index:10;  
+}
+.tabinator label:hover {
+  color: #888;
+  cursor: pointer;
+}
+.tabinator input:checked + label {
+  position: relative;
+  color: #000;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px 5px 0 0;
+}
+.tabinator input:checked + label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  box-shadow: 0 0 15px #939393;
+}
+#content1, #content2, #content3, #content4, #content5 {
+  display: none;
+  border-top: 1px solid #bbb;
+  padding: 15px;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+  box-shadow: 0 0 15px #939393;
+}
+</style>
+</head>
+<body>
+
+<div class = "tabinator">
+  <h1 align="center">Ashish Gupta</h1>
+  <input type = "radio" id = "tab1" name = "tabs" checked>
+  <label for = "tab1">About Me</label>
+  <input type = "radio" id = "tab2" name = "tabs">
+  <label for = "tab2">Experience</label>
+  <input type = "radio" id = "tab3" name = "tabs">
+  <label for = "tab3">Projects</label>
+  <input type = "radio" id = "tab4" name = "tabs">
+  <label for = "tab4">Education</label>
+  <input type = "radio" id = "tab5" name = "tabs">
+  <label for = "tab5">Skills</label>
+  <div id = "content1">
+    <p>
+	Hello, I'm Ashish Gupta.<br>
+	A final year student pursuing Bachelors of Technology in Computer Science and Engineering (CSE) from NIIT University, Neemrana.
+    </p>
+  </div>
+  <div id = "content2">
+    <p> <h3>NIIT Limited, Sector-34, Gurgaon</h3>
+	Summer Intern<br>
+	<img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_1500048017/niit-limited.png" alt="NIIT Limited" height="150" width="150">
+	During my 2 months internship at NIIT Limited, my knowledge about computer networks had expanded.
+	I got real world experience on how to troubleshoot networking related problems (local side or a remote machine).
+	Also got hands on approach on configuring routers and switches .
+	Learned basic commands and how they work, enabled routing and implemented VLANs among other tasks.
+    </p>
+  </div>
+  <div id = "content3">
+    <p><h3>Traffic analysis of NU LAN-Wifi to increase throughput.</h3>
+	In this research we analyze the Internet traffic distribution of our Campus Area Network to improve the overall throughput of the Internet traffic. 
+	We also worked on improving network configuration of various network related hardware and monitor network traffic with the help of a variety of softwares and tools. <br>
+	January 2018 - May 2018 <br> <br>
+	
+	<h3>Capstone Project </h3>
+	Our project is a platform that caters two types of users - buyers and sellers. 
+	Using our Web-App/Portal a buyer can look for sellers with deals according to their geographic location at any point of time, 
+	similarly a seller can list his/her sale item(s) with a quoted price.
+	The seller and buyer can communicate with each other as required.<br>
+	January 2018 - May 2018<br> <br>
+	
+	<h3>An Analysis of Sagarmala Project with reference to Economic development of Indian Economy</h3>
+	Written and presented a research paper in Jaipuria Institute of Management on December 17th, 2017 under the guidance of Dr. Gurendra Nath Bhardwaj. 
+	The paper deals with the investment made in the Sagarmala Project to develop ports, inland waterways and other marine and shipping related areas to revamp the logistics sector of India. 
+	The problems faced by the shipping and marine industry and their potential solutions.<br>
+	August 2017 - December 2017<br><br>
+	
+	<h3>Gas Leakage Detector</h3>
+	Detects the leakage of petroleum based gases like LPG, Butane, Methane and others. 
+	When a leakage is detected an alarm is triggered till the leakage is under control. Also text based message is sent to the registered mobile number. 
+	The project uses a microcontoller Arduino board, MQ5 gas sensor, a buzzer for alarm and a GSM module to send text messages.<br>
+	August 2016 - December 2016<br><br>
+    </p>
+  </div>
+  <div id = "content4">
+    <p>
+	<h3>B. Tech Computer Science And Engineering</h3>
+	NIIT University, Neemrana<br>
+	CGPA: 6.3 <br> <br>
+	
+	<h3>12th Standard (ISC) </h3>
+	Chintels School, Kanpur <br>
+	Result: 80%<br><br>
+	
+	<h3>10th Standard (ICSE)</h3>
+	Chintels School, Kanpur<br>
+	Result: 81%<br>
+	</p>
+  </div>
+  <div id = "content5">
+    <p>I get my hands dirty on the following tools: <br> <br>
+		<img src="https://i2.wp.com/itkey.com.au/wp-content/uploads/2017/10/prtg-featured.png?resize=730%2C350&ssl=1" alt="PRTG Network Monitor" height="100" width="200">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<img src="https://cdn6.aptoide.com/imgs/1/6/6/1669db138f72c4a33c1897cd408f5a1f_icon.png?w=256" alt="Cisco Packet Tracer" height="90" width="120">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<img src="C:\Users\Mukesh Gupta\Desktop\WireShark.png" alt="WireShark" height="100">
+
+
+    </p>
+  </div>
+</div>
+
+
+
+
+<!--
+<div class="w3-container">
+  <h2>Ashish Gupta</h2>
+  <p>Hello, I'm Ashish Gupta.<br>
+A final year student pursuing Bachelors of Technology in Computer Science and Engineering (CSE) from NIIT University, Neemrana.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openTab('About Me')">About Me</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('Skills')">Skills</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('Projects')">Projects</button>
+</div>
+
+<div id="About Me" class="w3-container Tab">
+  <h2>About Me</h2>
+<a href="http://about.html" target="/home/niit/prog1/about.html"></a>
+</div>
+
+<div id="Skills" class="w3-container Tab" style="display:none">
+  <h2>Skills</h2>
+  <p></p> 
+</div>
+
+<div id="Projects" class="w3-container Tab" style="display:none">
+  <h2>Projects</h2>
+  <p>
+<h4>R&D Project: Traffic analysis of NU LAN-Wifi to increase througput<br></h4>
+
+In this research we analyze the Internet traffic distribution of our Campus Area Network to improve the overall throughput of the Internet traffic. We also worked on improving network configuration of various network related hardware and monitor network traffic with the help of a variety of softwares and tools.
+<br>January 2018 - May 2018<br><br>
+
+<h4>Capstone Project: Online Deal Finder<br></h4>
+
+Our project is a platform that caters two types of users - buyers and sellers. Using our Web-App/Portal a buyer can look for sellers with deals according to their geographic location at any point of time, similarly a seller can list his/her sale item(s) with a quoted price. The seller and buyer can communicate with each other as required.<br>
+January 2018 - May 2018<br><br>
+
+<h4>Research Paper: An Analysis of Sagarmala Project with reference to Economic Development of Indian Economy<br></h4>
+
+Written and presented a research paper in Jaipuria Institue of Managment on December 17th, 2017 under the guidance of Dr. Gurendra Nath Bhardwaj. The paper deals with the investment made in the Sagarmala Project to develop ports, inland waterways and other marine and shipping related areas to revamp the logistics sector of India. The problems faced by the shipping and marine industry and their potential solutions.<br>
+August 2017 - December 2017<br><br>
+
+<h4>Android Application: Doctor On The Go mobile app<br></h4>
+
+This application is intended to help bridge the gap between patients and doctors. It helps patients to book appointments with Doctors. It also helps Doctor to manage the patient’s portfolio and their own clinic. Doctors can have a look at the appointments and the prescriptions.<br>
+August 2017 - December 2017<br><br>
+
+
+<h4>IOT Project: Gas Leakage Detector<br></h4>
+
+Detects the leakage of petroleum based gases like LPG, Butane, Methane and others. When a leakage is detected an alarm is triggered till the leakage is under control. Also text based message is sent to the registered mobile number. The project uses a microcontoller Arduino board, MQ5 gas sensor, a buzzer for alarm and a GSM module to send text messages.<br>
+August 2016 - December 2016<br> <br>
+</p>
+</div>
+
+<script>
+function openTab(Name) {
+    var i;
+    var x = document.getElementsByClassName("Tab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(Name).style.display = "block";  
+}
+</script>-->
+
+</body>
+</html>
